@@ -1,18 +1,19 @@
-
-<div *ngFor="let person of people | async">
-  <div class="col-md-3">
-    <div class="card">
-      <img class="card-img-top" src={{person.imageUrl}} alt="Card image cap">
-      <div class="card-block">
-        <a (click)='goToDetailPerson(person)'>{{person.name}}</a>
-        <!-- <div *ngIf="currentRoute === '/admin'">
-          <p class="card-text">
-            {{person.description}}
-          </p>
-          <hr>
-          <app-person-add [selectedPerson]="person"></app-person-add>
-        </div> -->
+<div class="row">
+  <div *ngFor="let person of people | async">
+      <div class="card">
+        <img class="card-img-top" src={{person.imageUrl}} alt="Card image cap">
+        <div class="card-block">
+          <h5><a (click)='goToDetailPerson(person)'>{{person.name}}</a></h5>
+          <h6>{{person.category}}</h6>
+          <h6>{{person.specialty}}</h6>
+          <!-- <div *ngIf="currentRoute === '/admin'">
+            <p class="card-text">
+              {{person.description}}
+            </p>
+            <hr>
+            <app-person-add [selectedPerson]="person"></app-person-add>
+          </div> -->
+        </div>
       </div>
-    </div>
   </div>
 </div>
