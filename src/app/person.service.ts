@@ -10,6 +10,11 @@ export class PersonService {
     this.people = database.list('people');
   }
 
+
+  getPeople() {
+    return this.people;
+  }
+
   addPerson(newPerson: Person){
     this.people.push(newPerson);
   }
