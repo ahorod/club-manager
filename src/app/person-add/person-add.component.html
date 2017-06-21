@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label>Name</label>
+  <input class="form-control" #newName><br>
+  <label>Image Url</label>
+  <input class="form-control" #newImageUrl><br>
+  <label>About person</label>
+  <textarea class="form-control text-style" rows="8" cols="100" #newDescription></textarea><br>
+  <label>Category</label>
+  <input class="form-control" #newCategory><br>
+  <label>Specialty</label>
+  <input class="form-control" #newSpecialty><br>
+  <button type="button" class="btn" (click)="submitForm(newName.value,newImageUrl.value,newDescription.value,newCategory.value,newSpecialty.value); newName.value='';newImageUrl.value='';newDescription.value='';newCategory.value='';newSpecialty.value=''">Save</button>
+</div>
