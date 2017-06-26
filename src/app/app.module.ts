@@ -17,6 +17,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
 import { PersonService } from './person.service';
+import { AboutComponent } from './about/about.component';
+import { SearchPipe } from './search.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { PersonService } from './person.service';
     AdminComponent,
     PersonDetailComponent,
     PersonAddComponent,
-    PersonEditComponent
+    PersonEditComponent,
+    AboutComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,15 @@
-<p>
-  person-detail works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+    <img class="image-detail" src='{{(personToDisplay | async)?.imageUrl}}' alt="" />
+    </div>
+    <div class="col-md-4">
+      <h2>{{(personToDisplay | async)?.name}}</h2>
+      <h4>{{(personToDisplay | async)?.category}}</h4>
+      <h4>{{(personToDisplay | async)?.specialty}}</h4>
+      <p class="text-style">
+        {{(personToDisplay | async)?.description}}
+      </p>
+    </div>
+  </div>
+</div>

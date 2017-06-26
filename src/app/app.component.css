@@ -8,5 +8,17 @@
 }
 
 .container-fluid {
-  margin-top: 5em;
+  background-color:#191919;
+  color: #BBBBBB;
+}
+
+.jumbotron {
+  height: 350px;
+  /*background-image: url(http://coolhunt.net/g1albums/chi_bar_andys/AndysJazz19.jpg);*/
+  background-image: url(http://www.shbarcelona.es/blog/es/wp-content/uploads/2015/06/escuchar-jazz-en-barcelona.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+  margin-bottom: 0px;
 }

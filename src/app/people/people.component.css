@@ -1,4 +1,28 @@
 .card-img-top{
   width: auto;
   height: 300px;
+  background-color: inherit;
+}
+
+.title{
+  padding: 2%;
+  text-align: center;
+}
+
+.card {
+  background-color: inherit;
+
+}
+.btn {
+  background-color: inherit;
+  color: inherit;
+}
+
+.form-control{
+  width: 50%;
+  margin: auto;
+}
+
+.search-form{
+  padding: 1em;
 }

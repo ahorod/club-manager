@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { Person } from '../person.model';
 import { Router } from '@angular/router';
 import { PersonService } from '../person.service';
@@ -14,6 +14,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class PeopleComponent implements OnInit {
   people: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  query = '';
 
   constructor(private router: Router, private personService: PersonService) { }
 
@@ -23,5 +24,9 @@ export class PeopleComponent implements OnInit {
 
   goToDetailPerson(clickedPerson) {
     this.router.navigate(['person', clickedPerson.$key]);
+  }
+
+  searchCategory(query) {
+    this.query = query;
   }
 }

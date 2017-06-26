@@ -1,0 +1,4 @@
+.admin-custom >>> .card-img-top {
+    max-width: 40%;
+    height: auto;
+}

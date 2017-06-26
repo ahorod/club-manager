@@ -1,19 +1,24 @@
+<div class="container-fluid">
+  <form class="form-inline search-form">
+    <input class="form-control" type="text" placeholder="Search Category" (change)="searchCategory($event.target.value)">
+</form>
+</div>
+<div class="container-fluid">
 <div class="row">
-  <div *ngFor="let person of people | async">
+  <div *ngFor="let person of people | async | search:query">
       <div class="card">
         <img class="card-img-top" src={{person.imageUrl}} alt="Card image cap">
         <div class="card-block">
           <h5><a (click)='goToDetailPerson(person)'>{{person.name}}</a></h5>
           <h6>{{person.category}}</h6>
           <h6>{{person.specialty}}</h6>
-          <!-- <div *ngIf="currentRoute === '/admin'">
-            <p class="card-text">
-              {{person.description}}
-            </p>
-            <hr>
-            <app-person-add [selectedPerson]="person"></app-person-add>
-          </div> -->
+          <a (click)='goToDetailPerson(person)' class="btn btn-secondary">See details</a>
+          <div *ngIf="currentRoute === '/admin'">
+           <hr>
+           <app-person-edit [selectedPerson]="person"></app-person-edit>
+         </div>
         </div>
       </div>
   </div>
+</div>
 </div>

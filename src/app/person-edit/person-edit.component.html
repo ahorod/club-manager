@@ -1,3 +1,18 @@
-<p>
-  person-edit works!
-</p>
+<!-- <div class="row">
+  <div class="col-md-4"> -->
+    <div class="form-group">
+      <label>Name</label>
+      <input class="form-control"  [(ngModel)]="selectedPerson.name"><br>
+      <label>Image Url</label>
+      <input class="form-control" [(ngModel)]="selectedPerson.imageUrl"><br>
+      <label>Category</label>
+      <input class="form-control" [(ngModel)]="selectedPerson.category"><br>
+      <label>Specilaty</label>
+      <input class="form-control" [(ngModel)]="selectedPerson.specialty"><br>
+      <label>About</label>
+      <textarea class="form-control text-style" rows="8" cols="100" [(ngModel)]="selectedPerson.description"></textarea><br>
+    </div>
+      <button class="btn btn-secondary" (click)="beginUpdatingPerson(selectedPerson)">Edit</button>
+      <button class="btn btn-secondary" (click)="beginDeletingPerson()">Delete</button>
+  <!-- </div>
+</div> -->
