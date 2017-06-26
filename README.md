@@ -1,6 +1,32 @@
-# ClubManager
+# Club-manager
+#### Web app, 16.06.2017
+#### By Anna Horodetska
+Club manager is an application which allows to keep track of employees by recording their info, adding, editing, searching.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+## Planning
+1. Configuration/dependencies
+  * Angular CLI version 1.1.0
+  * Bootstrap v4.0.0-alpha.6
+
+2. Specs
+  * All poeple will be displayed on homepage
+  * User will be able to filter list of people by Category
+  * User will be able to visit person profile page, which will include more info
+  * User will be able to visit "About" page, which will contain more info about club
+  * All data will stored in Firebase databe
+  * Admin will be able to add new person by submitting a form with person name, imageUrl, category, specilaty, description
+  * Admin will be able to edit person's profile
+  * Admin will be able to delete person's profile
+
+3. Potential future functionalities
+* Add functionality to keep track of stats, calendar of shifts
+* Add a message board area, where club employees may chat with each other.
+* Include an area called "announcements", "events" where users can post what events, matches, or meetings the club has planned.
+* Deploy application.
+* Implement AngularFire/Firebase user authentication
+
+4. UX/UI
+  * Install and use Bootstrap
 
 ## Development server
 
