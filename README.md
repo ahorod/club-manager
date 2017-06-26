@@ -13,8 +13,8 @@ Club manager is an application which allows to keep track of employees by record
   * User will be able to filter list of people by Category
   * User will be able to visit person profile page, which will include more info
   * User will be able to visit "About" page, which will contain more info about club
-  * All data will stored in Firebase databe
-  * Admin will be able to add new person by submitting a form with person name, imageUrl, category, specilaty, description
+  * All data will be stored in Firebase databe
+  * Admin will be able to add new person by submitting a form with person name, imageUrl, category, specialty, description
   * Admin will be able to edit person's profile
   * Admin will be able to delete person's profile
 
